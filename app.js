@@ -1,3 +1,4 @@
+var config = require('./config');
 var express = require( 'express' );
 var path = require( 'path' );
 var favicon = require( 'serve-favicon' );
@@ -9,7 +10,6 @@ var routes = require( './routes/index' );
 var api = require( './routes/api' );
 var app = express();
 var webpack = require( './webpack.config' );
-var config = require('./config');
 
 if ( process.env !== "production" ){
 	webpack.watch( {},
