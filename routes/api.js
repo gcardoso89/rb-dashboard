@@ -2,7 +2,7 @@ var express = require( 'express' );
 var http = require( 'http-request' );
 var router = express.Router();
 var path = require( 'path' );
-var reviewBoardPath = process.env.REVIEWBOARD_URL;
+var reviewBoardPath = process.env.REVIEWBOARD_BASE_URL + '/api/';
 var encryptor = require('simple-encryptor')(process.env.SECRET_KEY);
 /* GET users listing. */
 
